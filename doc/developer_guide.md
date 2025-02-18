@@ -6,6 +6,28 @@ If you want to embed EM into another application, see the [embedding guide](./em
 
 ## Extension Manager
 
+This project uses a mix of different languages and build tools / helpers, so please read the instructions carefully.
+
+### Project Keeper and Release Droid
+
+For Java and Go dependency management and documentation this project uses [Project Keeper (PK)](github.com/exasol/project-keeper). On the other hand it also uses [Release Droid (RD)](github.com/exasol/release-droid) to create the release. RD is deprecated and will be replaced once PK can handle the complex project setup used in this project.
+
+#### Updating the Dependency Documentation and Change Log
+
+In this project you **cannot** run project keeper directly from the main directory like you are used to. Instead, please run the shell script that is also used in the GitHub action: 
+
+To verify the current project:
+
+```sh
+.github/workflows/project-keeper.sh verify
+```
+
+To automatically fix it:
+
+```sh
+.github/workflows/project-keeper.sh fix
+```
+
 ### Building
 
 To build the binary, run

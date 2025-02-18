@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
     <url>https://github.com/exasol/extension-manager/</url>
     <properties>
-        <revision>0.5.15</revision>
+        <revision>0.5.16</revision>
         <junit.version>5.10.2</junit.version>
         <java.version>11</java.version>
     </properties>
